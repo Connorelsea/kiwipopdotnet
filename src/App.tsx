@@ -1,29 +1,46 @@
 import React, { useState } from "react";
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import "./App.css";
 import StreamButton from "./StreamButton.tsx";
 import Button, { ButtonLink } from "./Button.tsx";
 
+const pulseAnimation = keyframes`
+    0% {
+      transform: scale(0.9);
+    }
+    65% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+`;
+
 const Title = styled.h1`
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2.6em;
   letter-spacing: -0.06em;
 
   text-align: center;
   color: white;
   margin: 0;
   margin-bottom: 10px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
 `;
 
 const SubTitle = styled.h2`
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.5em;
 
   text-align: center;
   color: white;
   margin: 0;
+  margin-top: -15px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
 `;
 
 const Container = styled.div`
@@ -61,6 +78,12 @@ const Area = styled.div`
 const LogoImage = styled.img`
   width: 90%;
   max-width: 550px;
+
+  animation-name: ${pulseAnimation};
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
+  animation-duration: 2s;
 `;
 
 function App() {

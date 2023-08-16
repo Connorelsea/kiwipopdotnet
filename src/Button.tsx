@@ -26,6 +26,7 @@ const Button = styled.button`
     margin: 0;
     padding: 0;
     align-self: flex-end;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
   }
 
   > img {
