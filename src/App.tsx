@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import "./App.css";
 import StreamButton from "./StreamButton.tsx";
-import Button from "./Button.tsx";
+import Button, { ButtonLink } from "./Button.tsx";
 
 const Title = styled.h1`
   font-family: "Quicksand", sans-serif;
@@ -55,6 +55,7 @@ const Area = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 550px;
 `;
 
 function App() {
@@ -86,9 +87,24 @@ function App() {
       <Area>
         <Title>SUPPORT</Title>
         <ButtonContainer>
-          <Button>Follow on Spotify</Button>
-          <Button>Follow on Bandcamp</Button>
-          <Button>Follow on Soundcloud</Button>
+          <ButtonLink
+            href="https://open.spotify.com/artist/0WgvFxGODaEBXwRSSprC9C?si=JtR9IZWEQiy3owjFO3bdrw"
+            target="_blank"
+          >
+            Follow on Spotify
+          </ButtonLink>
+          <ButtonLink
+            href="https://deviceoperator.bandcamp.com/"
+            target="_blank"
+          >
+            Follow on Bandcamp
+          </ButtonLink>
+          <ButtonLink
+            href="https://soundcloud.com/deviceoperator"
+            target="_blank"
+          >
+            Follow on Soundcloud
+          </ButtonLink>
         </ButtonContainer>
       </Area>
     </Container>

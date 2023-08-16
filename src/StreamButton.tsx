@@ -47,6 +47,7 @@ const StreamButton: React.FC<ButtonProps> = ({ label, img }) => {
                 color="#1CA0C3"
                 onClick={onClickGlobal}
                 href={bandcampLink}
+                target="_blank"
               >
                 Bandcamp
               </ClickButton>
@@ -54,6 +55,7 @@ const StreamButton: React.FC<ButtonProps> = ({ label, img }) => {
                 color={LightenDarkenColor("#FF0001", 50)}
                 onClick={onClickGlobal}
                 href={youtubeLink}
+                target="_blank"
               >
                 Youtube
               </ClickButton>
@@ -61,6 +63,7 @@ const StreamButton: React.FC<ButtonProps> = ({ label, img }) => {
                 color="#1ED760"
                 onClick={onClickGlobal}
                 href={spotifyLink}
+                target="_blank"
               >
                 Spotify
               </ClickButton>
@@ -70,6 +73,7 @@ const StreamButton: React.FC<ButtonProps> = ({ label, img }) => {
                 color="#FF551A"
                 onClick={onClickGlobal}
                 href={soundcloudLink}
+                target="_blank"
               >
                 Soundcloud
               </ClickButton>
@@ -77,6 +81,7 @@ const StreamButton: React.FC<ButtonProps> = ({ label, img }) => {
                 color="#F94D65"
                 onClick={onClickGlobal}
                 href={appleMusicLink}
+                target="_blank"
               >
                 Apple Music
               </ClickButton>
