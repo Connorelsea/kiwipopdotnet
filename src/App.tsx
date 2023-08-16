@@ -33,7 +33,7 @@ const Container = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-image: url("backgroundSmaller.png");
+  background-image: url("backgroundSmaller.jpg");
   background-position: center;
   padding-top: 40px;
 `;
