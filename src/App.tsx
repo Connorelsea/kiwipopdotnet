@@ -58,12 +58,18 @@ const Area = styled.div`
   max-width: 550px;
 `;
 
+const LogoImage = styled.img`
+  width: 90%;
+  max-width: 550px;
+`;
+
 function App() {
   const [singlesOpen, setSinglesOpen] = useState(false);
 
   return (
     <Container>
       <Area>
+        <LogoImage src="logo.png"></LogoImage>
         <Title>ALBUM</Title>
         <SubTitle>OUT AUGUST 18TH</SubTitle>
       </Area>
